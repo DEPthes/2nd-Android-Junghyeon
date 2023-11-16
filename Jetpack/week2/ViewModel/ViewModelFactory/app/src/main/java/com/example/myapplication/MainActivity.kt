@@ -18,4 +18,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this,viewModelFactory)[MainViewModel::class.java]
         binding.vm = viewModel
     }
+    // UI 레이어는 Activity, ViewModel
+    // Domain Layer - > 비즈니스 로직 레포지토리 패턴을
+    // Data Layer  Retrofit RoomDB
 }
