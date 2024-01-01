@@ -26,7 +26,7 @@ class FourthFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnRetry.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_fourthFragment_to_firstFragment)
+            Navigation.findNavController(view).navigate(R.id.action_fourthFragment_to_firstFragment)
         }
         binding.btnEnd.setOnClickListener {
             requireActivity().finish()

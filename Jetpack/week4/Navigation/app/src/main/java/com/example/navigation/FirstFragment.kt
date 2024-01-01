@@ -29,6 +29,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnApple.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_firstFragment_to_secondFragment)
+            Log.d("it is what",it.toString())
             viewModel.setFruit(binding.btnApple.text.toString())
         }
         binding.btnOrange.setOnClickListener {
