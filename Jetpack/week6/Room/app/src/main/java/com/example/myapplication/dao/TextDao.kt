@@ -12,7 +12,6 @@ interface TextDao {
     @Query("SELECT * FROM text_table")
     fun getAllData(): List<TextEntity>
 
-    // 데이터 삽입시 primary key가 겹치면 덮어쓴다
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(text: TextEntity)
 
